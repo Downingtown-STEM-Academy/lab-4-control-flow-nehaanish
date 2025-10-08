@@ -7,16 +7,26 @@
  
  > Test your code with all 3 of the currentAverage values below. Make sure only 1 is uncommented at a time!
  */
+let isAverage = currentAverage >= targetLowerBound && currentAverage <= targetUpperBound
+let isBelowAverage = currentAverage < targetLowerBound
+let isAboveAverage = currentAverage > targetUpperBound
+
 let targetLowerBound = 70
 let targetUpperBound = 90
 
-let currentAverage = 67
-//let currentAverage = 85
+//let currentAverage = 67
+let currentAverage = 85
 //let currentAverage = 95
 
-//insert your code here
+if isAboveAverage {
+    print("You're right on track!")
+} else if isBelowAverage {
+    print( "You need to study more often")
+} else if isAverage {
+    print( "You're doing great, but try to push it a bit!")
+}
 
-//print the results from each current average here.
-
-
+print("67 = 'You need to study more'")
+print("85 = You're doing great, but try to push it a bit!")
+print("95 = 'You're right on track!'")
 //: [Previous](@previous)  |  page 5 of 9  |  [Next](@next)
